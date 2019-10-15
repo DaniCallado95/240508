@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tabla Info</title>
+</head>
+<body>
+
+<div style="text-align:center"><a href="/tablas/{{ result[0] }}"><br>ATRAS<br><br></a></div>
+
+<div style="margin-left:5%">
+    <p> Nº Registros: {{ result[1] }}</p>
+    <p> Campos: </p>
+
+    <list>
+        {% for value in result[2] %}
+            <ul> {{ value }} </ul>
+        {% endfor %}
+    </list>
+</div>
+
+
+</body>
+</html>
